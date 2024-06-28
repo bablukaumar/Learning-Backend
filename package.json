@@ -4,10 +4,10 @@
   "description": "Now i am learning Backend in javascript",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "repository": {
-    "type": "modul",
+    "type": "module",
     "url": "javascript , Backend"
   },
   "keywords": [
@@ -19,5 +19,15 @@
   "devDependencies": {
     "nodemon": "^3.1.4",
     "prettier": "^3.3.2"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.3",
+    "mongoose-aggregate-paginate-v2": "^1.1.0"
   }
 }
